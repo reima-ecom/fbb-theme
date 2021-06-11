@@ -11,3 +11,5 @@ module:
   # mimic reima-theme dir layout
   - source: layouts
     target: assets
+  - source: static
+    target: static
