@@ -1,0 +1,13 @@
+---
+baseURL: https://www.finnishbabybox.com
+title: Finnish Baby Box
+metaDataFormat: yaml
+module:
+  imports:
+  - path: github.com/reima-ecom/reima-theme/v2
+  mounts:
+  - source: layouts
+    target: layouts
+  # mimic reima-theme dir layout
+  - source: layouts
+    target: assets
