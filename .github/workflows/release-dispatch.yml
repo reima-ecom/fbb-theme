@@ -14,6 +14,7 @@ jobs:
         repo: 
           - reima-ecom/fbb-shopify
           - reima-ecom/fbb-japan
+    runs-on: ubuntu-latest
     steps:
       - name: Repository Dispatch
         uses: peter-evans/repository-dispatch@v1
