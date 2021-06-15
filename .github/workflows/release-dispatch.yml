@@ -1,0 +1,23 @@
+name: Dispatch Release Events
+on:
+  release:
+    types: [published]
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/release-dispatch.yml
+jobs:
+  dispatch:
+    strategy:
+      matrix:
+        repo: 
+          - reima-ecom/fbb-shopify
+          - reima-ecom/fbb-japan
+    steps:
+      - name: Repository Dispatch
+        uses: peter-evans/repository-dispatch@v1
+        with:
+          token: ${{ secrets.GHA_DISPATCH_TOKEN }}
+          repository: ${{ matrix.repo }}
+          event-type: theme-released

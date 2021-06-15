@@ -1,0 +1,28 @@
+name: Theme Update
+
+on:
+  repository_dispatch:
+    types: theme-released
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/theme-released.yml
+
+jobs:
+  theme-released:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: denolib/setup-deno@v2
+    - uses: peaceiris/actions-hugo@v2
+    - run: hugo mod get -u
+    - name: Commit changes
+      run: |
+        git config user.name github-actions
+        git config user.email github-actions@github.com
+        git add go.mod
+        git add go.sum
+        git diff --staged --exit-code || git commit -m "fix: Updated theme and frontmatter"
+        git pull
+        git push
