@@ -2,4 +2,4 @@ module github.com/reima-ecom/fbb-theme
 
 go 1.16
 
-require github.com/reima-ecom/reima-theme/v2 v2.61.4 // indirect
+require github.com/reima-ecom/reima-theme/v2 v2.61.5 // indirect
