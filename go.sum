@@ -256,3 +256,5 @@ github.com/reima-ecom/reima-theme/v2 v2.76.6 h1:RIXAf3hDCtohau5LJhbtzMxqMKkZO4Bm
 github.com/reima-ecom/reima-theme/v2 v2.76.6/go.mod h1:qSn79c6jXvrwrRMfZ7idnWYEppdjhXlvowHXKUa84VM=
 github.com/reima-ecom/reima-theme/v2 v2.77.0 h1:rLyrXiyb9J+gnQ6kQhinkUEhPTwyEl1aguA6fQI8kxU=
 github.com/reima-ecom/reima-theme/v2 v2.77.0/go.mod h1:qSn79c6jXvrwrRMfZ7idnWYEppdjhXlvowHXKUa84VM=
+github.com/reima-ecom/reima-theme/v2 v2.77.1 h1:2hTgLfyo1dVtWgBu5ftLEKMQ7/nXVQ7s3A7StxWQGak=
+github.com/reima-ecom/reima-theme/v2 v2.77.1/go.mod h1:qSn79c6jXvrwrRMfZ7idnWYEppdjhXlvowHXKUa84VM=
